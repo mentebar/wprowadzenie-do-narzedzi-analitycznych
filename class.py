@@ -12,7 +12,7 @@ class Dataset:
         try:
             with open(filepath, encoding=encoding) as filehandler:
                 for line_idx, line in enumerate(filehandler):
-                    clean_line = line.strip().split(delimiter)  # Usuwamy \n i dzielimy linię
+                    clean_line = line.strip().split(delimiter) 
                     if line_idx == 0 and header:
                         self.labels = clean_line
                     else:
